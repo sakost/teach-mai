@@ -16,15 +16,14 @@ class timeit:
         self.end = time.perf_counter()
         self.log_to_stdout()
 
-
     def log_to_stdout(self):
         print(f"Proceed {'' if self.name is None else self.name} with {self.end - self.start} seconds")
-
 
 
 def main():
     with timeit("database request"):
         # __enter__
+
         print("requesting database data...")
         time.sleep(3)
         # __exit__

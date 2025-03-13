@@ -3,4 +3,6 @@ name = "teach-mai"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "sqlalchemy>=2.0.39",
+]
